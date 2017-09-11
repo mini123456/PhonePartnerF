@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/headline"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_px_86"
+    android:background="@color/mainBlue">
+
+    <!--<LinearLayout
+        android:id="@+id/line_backe_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/backImage"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/backwhite"
+            android:background="@drawable/ibtn_back_bg"
+            android:layout_gravity="center_vertical" />
+     </LinearLayout>-->
+
+
+    <TextView
+        android:id="@+id/headtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_px_12"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/dimen_px_40"
+        android:textColor="#ffffff" />
+    <com.phonepartner.View.InterceptLinearLayout
+    android:id="@+id/line_add_action"
+    android:layout_width="150dp"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:gravity="center_vertical|right">
+    <ImageView
+        android:id="@+id/add_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_fun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_px_40"
+        android:textSize="@dimen/dimen_px_30"
+        android:textColor="@color/white" />
+</com.phonepartner.View.InterceptLinearLayout>
+
+    <com.phonepartner.View.InterceptLinearLayout
+        android:id="@+id/line_backe_image"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/dimen_px_86"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:id="@+id/backImage"
+            android:layout_width="@dimen/dimen_px_48"
+            android:layout_height="@dimen/dimen_px_48"
+            android:background="@mipmap/back"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center_vertical" />
+    </com.phonepartner.View.InterceptLinearLayout>
+
+</RelativeLayout>

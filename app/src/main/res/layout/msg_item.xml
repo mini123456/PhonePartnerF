@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/dimen_px_20">
+        <ImageView
+            android:id="@+id/recorder_left_img"
+            android:layout_width="@dimen/dimen_px_80"
+            android:layout_height="@dimen/dimen_px_80"
+            android:src="@mipmap/mag1"
+            android:layout_marginLeft="@dimen/dimen_px_10"
+            android:layout_marginTop="@dimen/dimen_px_10"
+            android:layout_marginRight="@dimen/dimen_px_10"/>
+        <LinearLayout
+            android:id="@+id/recorder_left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:background="@drawable/bg_msg_left"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/left_recoder_lenght"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <View
+                    android:id="@+id/left_recoder_anim"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@mipmap/adj_left" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/left_recoder_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginLeft="@dimen/dimen_px_100"
+        android:layout_marginTop="@dimen/dimen_px_20">
+
+    <LinearLayout
+        android:id="@+id/recorder_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_msg_right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/right_recoder_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+        <FrameLayout
+            android:id="@+id/right_recoder_lenght"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <View
+                android:id="@+id/right_recoder_anim"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical|left"
+                android:background="@mipmap/adj_right" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/recorder_right_img"
+            android:layout_width="@dimen/dimen_px_80"
+            android:layout_height="@dimen/dimen_px_80"
+            android:src="@mipmap/mag2"
+            android:layout_marginTop="@dimen/dimen_px_10"
+            android:layout_marginLeft="@dimen/dimen_px_10"
+            android:layout_marginRight="@dimen/dimen_px_10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/dimen_px_100"
+        android:layout_marginTop="@dimen/dimen_px_20">
+
+        <ImageView
+            android:id="@+id/msg_left_img"
+            android:layout_width="@dimen/dimen_px_80"
+            android:layout_height="@dimen/dimen_px_80"
+            android:src="@mipmap/mag1"
+            android:layout_marginLeft="@dimen/dimen_px_10"
+            android:layout_marginTop="@dimen/dimen_px_10"
+            android:layout_marginRight="@dimen/dimen_px_10"/>
+
+        <LinearLayout
+        android:id="@+id/message_left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@drawable/bg_msg_left">
+
+        <TextView
+            android:id="@+id/left_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/dimen_px_20"
+        android:layout_marginLeft="@dimen/dimen_px_100">
+
+    <LinearLayout
+        android:id="@+id/message_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/bg_msg_right"
+        android:layout_marginTop="@dimen/dimen_px_20"
+        android:layout_marginLeft="@dimen/dimen_px_100">
+
+        <TextView
+            android:id="@+id/right_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/msg_right_img"
+            android:layout_width="@dimen/dimen_px_80"
+            android:layout_height="@dimen/dimen_px_80"
+            android:src="@mipmap/mag2"
+            android:layout_marginTop="@dimen/dimen_px_10"
+            android:layout_marginLeft="@dimen/dimen_px_10"
+            android:layout_marginRight="@dimen/dimen_px_10"/>
+    </LinearLayout>
+</LinearLayout>

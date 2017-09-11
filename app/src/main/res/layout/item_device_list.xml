@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_px_120"
+        android:orientation="horizontal"
+        android:background="@color/gray">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_px_70"
+            android:layout_height="@dimen/dimen_px_70"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_px_40"
+            android:src="@mipmap/yundongs"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/tvDeviceName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_px_40"
+            android:text="设备"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/dimen_px_30"/>
+
+        <TextView
+            android:id="@+id/tvChangeDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/dimen_px_28"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tvConnectState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/dimen_px_30"
+            android:layout_marginLeft="@dimen/dimen_px_30"
+            android:textColor="@color/ddd"
+            android:textSize="@dimen/dimen_px_28"
+            android:text="连接"
+            />
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_px_20"
+    android:background="@color/white"/>
+</LinearLayout>

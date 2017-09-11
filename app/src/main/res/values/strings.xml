@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PhonePartner</string>
+    <string name="title_activity_maps">PhonePartner</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="str_recorder_normal">按住说话</string>
+    <string name="str_recorder_recording">松开结束</string>
+    <string name="str_recorder_want_cancel">松开手指，取消发送</string>
+
+    <string name="ble_not_supported">您的设备不支持蓝牙4.0</string>
+    <string name="label_data">透传接收:</string>
+    <string name="label_device_address">MAC地址:</string>
+    <string name="label_state">连接状态:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">设备已连接</string>
+    <string name="connecting">正在连接设备....</string>
+    <string name="disconnected">断开连接</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="TXD">发送数据:</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <!-- Menu items -->
+    <string name="ing">通讯中....</string>
+    <string name="menu_connect">连接设备</string>
+    <string name="menu_disconnect">断开连接</string>
+    <string name="menu_chooseBluetooth">选择设备</string>
+    <string name="menu_scan">扫描设备</string>
+    <string name="menu_stop">停止扫描</string>
+</resources>

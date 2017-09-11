@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/head"></include>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+    <View
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/activity_group_radioGroup"
+        android:background="#cccccc"/>
+
+    <RadioGroup
+        android:id="@+id/activity_group_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:checkedButton="@+id/rbMap"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <RadioButton
+            android:id="@+id/rbDervieceConnect"
+            style="@style/main_tab_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/main_tab_1"
+            android:gravity="center"
+            android:text="设备"/>
+
+        <RadioButton
+            android:id="@+id/rbMessage"
+            style="@style/main_tab_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:checked="false"
+            android:drawableTop="@drawable/main_tab_2"
+            android:gravity="center"
+            android:text="消息"/>
+
+        <RadioButton
+            android:id="@+id/rbMap"
+            style="@style/main_tab_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:checked="false"
+            android:drawableTop="@drawable/main_tab_3"
+            android:gravity="center"
+            android:text="地图"/>
+
+        <RadioButton
+            android:id="@+id/rbSetting"
+            style="@style/main_tab_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:checked="false"
+            android:drawableTop="@drawable/main_tab_4"
+            android:gravity="center"
+            android:text="我的"/>
+    </RadioGroup>
+
+</LinearLayout>
+

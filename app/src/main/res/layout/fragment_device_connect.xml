@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phonepartner.frgment.DeviceScanConFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/head"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_px_500"
+                android:gravity="center"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <!--<ImageView-->
+                        <!--android:id="@+id/ivConnect"-->
+                        <!--android:layout_width="@dimen/dimen_px_266"-->
+                        <!--android:layout_height="@dimen/dimen_px_266"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--android:src="@mipmap/round"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:visibility="gone"/>-->
+                    <com.phonepartner.View.RoundedImageView
+                        android:id="@+id/ivStartConnect"
+                        android:layout_width="@dimen/dimen_px_230"
+                        android:layout_height="@dimen/dimen_px_230"
+                        android:src="@mipmap/shebeilianjie"/>
+
+                    <ImageView
+                        android:id="@+id/ivIsConnect"
+                        android:layout_width="@dimen/dimen_px_45"
+                        android:layout_height="@dimen/dimen_px_45"
+                        android:src="@mipmap/connotice"
+                        android:layout_gravity="right|top"
+                        android:layout_marginTop="@dimen/dimen_px_20"
+                        android:layout_marginRight="@dimen/dimen_px_20"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvCnDvName"
+                    android:layout_width="@dimen/dimen_px_220"
+                    android:layout_height="@dimen/dimen_px_60"
+                    android:layout_marginTop="@dimen/dimen_px_30"
+                    android:background="@drawable/corners_bg"
+                    android:gravity="center"
+                    android:text="暂无数据连接"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dimen_px_28"/>
+                <TextView
+                    android:layout_width="@dimen/dimen_px_200"
+                    android:layout_height="@dimen/dimen_px_80"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="设备列表"
+                    android:background="@drawable/corners_blue_bg"/>
+                </LinearLayout>
+
+            <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDeviceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+</FrameLayout>

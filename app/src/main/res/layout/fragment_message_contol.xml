@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phonepartner.frgment.MessageContolFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <include layout="@layout/head"></include>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:background="@drawable/bg_function"
+          android:orientation="horizontal"
+          android:paddingLeft="20dp">
+
+          <TextView
+              android:id="@+id/TextView0"
+              android:layout_width="0dp"
+              android:layout_height="20dp"
+              android:layout_weight="1"
+              android:gravity="center_vertical"
+              android:text="连接状态："
+              android:textSize="15dp" />
+
+          <TextView
+              android:id="@+id/connection_state"
+              android:layout_width="0dp"
+              android:layout_height="20dp"
+              android:layout_weight="2"
+              android:gravity="center_vertical"
+              android:textSize="15dp" />
+      </LinearLayout>
+
+      <ListView
+          android:id="@+id/listView"
+          android:layout_width="fill_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:divider="@null">
+
+      </ListView>
+
+      <LinearLayout
+          android:id="@+id/rl_bottom"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true">
+
+          <!-- 聊天输入框 -->
+          <include
+              layout="@layout/customchat_relativelayout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+  </LinearLayout>
+
+</FrameLayout>

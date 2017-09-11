@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    tools:context="com.phonepartner.activity.HelpActivity">
+<include layout="@layout/head"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_px_30"
+        android:text="产品说明"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/dimen_px_30"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_px_600"
+        android:layout_marginLeft="@dimen/dimen_px_24"
+        android:layout_marginRight="@dimen/dimen_px_24"
+        android:gravity="top"
+        android:padding="@dimen/dimen_px_24"
+        android:background="@drawable/edit_bg"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/dimen_px_30"
+        android:enabled="false"
+        android:text="如果你无法简洁的表达你的想法，那只说明你还不够了解它。
+        --阿尔伯特.爱因斯坦"/>
+</LinearLayout>
